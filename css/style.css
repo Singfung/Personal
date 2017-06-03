@@ -98,9 +98,11 @@ border-color: transparent;
   z-index: -1;
   -webkit-transform: translateX(-100%);
   transform: translateX(-100%);
+  -o-transform: translateX(-100%);
+  -moz-transform: translateX(-100%);
   opacity: 0;
-  -webkit-transition: all 0.5s steps(8);
-  transition: all 0.5s steps(8);
+  -webkit-transition: all 0.4s steps(30);
+  transition: all 0.4s steps(30);
 }
 
 .snip1499 li:hover:before,
@@ -113,6 +115,8 @@ border-color: transparent;
 .snip1499 li.current a:after {
   -webkit-transform: translateX(0%);
   transform: translateX(0%);
+  -o-transform: translateX(0%);
+  -moz-transform: translateX(0%);
   opacity: 1;
 }
 
@@ -120,24 +124,33 @@ border-color: transparent;
 .snip1499 li.current:before {
   -webkit-transition-delay: 0.225s;
   transition-delay: 0.225s;
+  -o-transition-delay: 0.225s;
+  -moz-transition-delay: 0.225s;
+
 }
 
 .snip1499 li:hover:after,
 .snip1499 li.current:after {
   -webkit-transition-delay: 0s;
   transition-delay: 0s;
+  -o-transition-delay: 0s;
+  -moz-transition-delay: 0s;
 }
 
 .snip1499 li:hover a:before,
 .snip1499 li.current a:before {
   -webkit-transition-delay: 0.15s;
   transition-delay: 0.15s;
+  -o-transition-delay: 0.15s;
+  -moz-transition-delay: 0.15s;
 }
 
 .snip1499 li:hover a:after,
 .snip1499 li.current a:after {
   -webkit-transition-delay: 0.075s;
   transition-delay: 0.075s;
+  -o-transition-delay: 0.075s;
+  -moz-transition-delay: 0.075s;
 }
 
 

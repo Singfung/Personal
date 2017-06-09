@@ -71,6 +71,8 @@ html, body{
 #catagoryBar .navbar-nav > li > a{
   font-size: 25px;
 }
+#catagoryBar .navbar-nav > li > a:hover{
+}
 
 
 

@@ -5,9 +5,9 @@ $(document).ready(function(){
 		if(ref == "one"){
 			colorTarget.css({"background-color":"rgba(255,253,27,0.5)"});
 		}else if(ref == "two"){
-			colorTarget.css({"background-color":"rgba(11,53,219,0.5)"});
+			colorTarget.css({"background-color":"rgba(255,135,33,0.5)"});
 		}else{
-			colorTarget.css({"background-color":"rgba(255,18,5,0.5)"});
+			colorTarget.css({"background-color":"rgba(255,4,34,0.5)"});
 		}
 	}, function(){
 		var colorTarget = $("#catagoryBar")

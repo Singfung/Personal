@@ -71,7 +71,18 @@ html, body{
 #catagoryBar .navbar-nav > li > a{
   font-size: 25px;
 }
-#catagoryBar .navbar-nav > li > a:hover{
+
+#photoBox{
+  height: 600px;
+  width: 75%;
+  border-right: transparent;
+  float: left;
+}
+#aboutSection{
+  background: rgba(0,0,0,0.3);
+  height:1000px;
+  width: 25%;
+  float: right;
 }
 
 

@@ -73,12 +73,22 @@ html, body{
 }
 
 #photoBox{
+  position: relative;
   height: 600px;
   width: 75%;
   border-right: transparent;
   float: left;
 }
+#photoBox img{
+  position: absolute;
+  max-width: 60%;
+  height: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 #aboutSection{
+  position: relative;
   background: rgba(0,0,0,0.3);
   height:1000px;
   width: 25%;

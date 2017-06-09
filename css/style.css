@@ -50,12 +50,30 @@ html, body{
 #blogName > h1{
   font-family: 'Roboto Condensed', sans-serif;
   font-weight: bolder;
- 
-  font-size: 5vw;
+  font-size: 7vw;
   color: white;
   line-height: 184px; /* vertical center 200 - 8*2 */
   margin: auto; /* horizontal center */
 }
+#catagoryBar{
+  margin-top: -8px;
+}
+#catagoryBar .navbar-header{
+  text-align: center;
+}
+#catagoryBar .navbar-toggle{
+  float: none;
+  border-color: transparent;
+}
+#catagoryBar .navbar-nav > li{
+  margin: 0 41px;
+}
+#catagoryBar .navbar-nav > li > a{
+  font-size: 25px;
+}
+
+
+
 
 
 

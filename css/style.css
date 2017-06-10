@@ -55,37 +55,48 @@ html, body{
   line-height: 184px; /* vertical center 200 - 8*2 */
   margin: auto; /* horizontal center */
 }
-#catagoryBar{
+#categoryBar{
   margin-top: -8px;
 }
-#catagoryBar .navbar-header{
+#categoryBar .navbar-header{
   text-align: center;
 }
-#catagoryBar .navbar-toggle{
+#categoryBar .navbar-toggle{
   float: none;
   border-color: transparent;
 }
-#catagoryBar .navbar-nav > li{
+#categoryBar .navbar-nav > li{
   margin: 0 41px;
 }
-#catagoryBar .navbar-nav > li > a{
+#categoryBar .navbar-nav > li > a{
   font-size: 25px;
 }
 
 #photoBox{
   position: relative;
-  height: 600px;
+  height: 800px;
   width: 75%;
   border-right: transparent;
   float: left;
 }
 #photoBox img{
   position: absolute;
-  max-width: 60%;
+  max-width: 80%;
   height: auto;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+#photoBox img.vertical{
+  position: absolute;
+  width: auto;
+  max-height: 80%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.myDisable{
+  display: none;
 }
 #aboutSection{
   position: relative;

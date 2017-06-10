@@ -15,6 +15,8 @@ $(document).ready(function(){
 		colorTarget.css({"background-color":"rgba(0,0,0,0)"});
 	});
 
+	
+
 	$("#categoryBar a").click(function(){
 		var ref = $(this).attr("ref");
 		$("#photoBox img[class != myDisable]").addClass("myDisable");

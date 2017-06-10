@@ -74,7 +74,8 @@ html, body{
 
 #photoBox{
   position: relative;
-  height: 800px;
+  height: 100vh;
+  min-height: 400px;
   width: 75%;
   border-right: transparent;
   float: left;
@@ -88,13 +89,9 @@ html, body{
   transform: translate(-50%, -50%);
 }
 #photoBox img.vertical{
-  position: absolute;
-  width: auto;
   max-height: 80%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
+  }
+
 .myDisable{
   display: none;
 }

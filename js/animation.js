@@ -15,13 +15,24 @@ $(document).ready(function(){
 		colorTarget.css({"background-color":"rgba(0,0,0,0)"});
 	});
 
-	
 
-	$("#categoryBar a").click(function(){
-		var ref = $(this).attr("ref");
-		$("#photoBox img[class != myDisable]").addClass("myDisable");
-		$('#photoBox img[ref = "'+ref+'"]').removeClass("myDisable");
+	$("#photoBox a").click(function(){
+		// String local variables
+		var numOfPic = 3;
+		var current = ($("#category1 img[class != 'myDisable']").attr("ref"));
+		var next;
+
+		if($(this).attr("id") == "right"){
+			next = ((parseInt(current) + 1)%numOfPic).toString();
+		}else{
+			next = ((parseInt(current) + (numOfPic - 1))%numOfPic).toString();
+		}
+
+		// disable current, enable next
+		$("#category1 img[ref = '"+current+"']").addClass("myDisable");
+		$("#category1 img[ref = '"+next+"']").removeClass("myDisable");
 	});
+
 
 	
 });

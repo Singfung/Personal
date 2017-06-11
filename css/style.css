@@ -84,10 +84,10 @@ html, body{
 #photoBox #buttons{
 position: absolute;
 width: 100%;
-top: 50%;
+top: 40%;
 left: 50%;
 transform: translate(-50%, -50%);
-font-size: 3vw;
+font-size: 4vw;
 }
 
 #photoBox #buttons #left{
@@ -105,13 +105,13 @@ font-size: 3vw;
   position: absolute;
   max-width: 80% ;
   height: auto;
-  top: 50%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.8);
 }
 #photoBox img.vertical{
-  max-height: 80%;
+  max-height: 70%;
   }
 
 .myDisable{

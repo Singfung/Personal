@@ -18,8 +18,8 @@ $(document).ready(function(){
 
 	$("#photoBox a").click(function(){
 		// String local variables
-		var numOfPic = 3;
-		var current = ($("#category1 img[class != 'myDisable']").attr("ref"));
+		var numOfPic = 19;
+		var current = $("#category1 img").not(".myDisable").attr("ref");
 		var next;
 
 		if($(this).attr("id") == "right"){

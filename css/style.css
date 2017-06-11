@@ -6,7 +6,11 @@ html, body{
 	padding: 0px; margin: 0px;
 	height:100%; width:100%;
 	overflow-x: hidden; 
-  background-color: #BDB6B0; 
+  background-color: #BDB6B0;
+  -webkit-user-select: none;  
+  -moz-user-select: none;    
+  -ms-user-select: none;      
+  user-select: none; 
 }
 
 .borderStyle{
@@ -36,6 +40,7 @@ html, body{
   background: rgba(0,0,0,0.3);
   position: relative;
   height: 400px;
+  
 }
 #blogName{
   background-color: #BDB6B0;
@@ -49,6 +54,7 @@ html, body{
 }
 #blogName > h1{
   font-family: 'Roboto Condensed', sans-serif;
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.3);
   font-weight: bolder;
   font-size: 7vw;
   color: white;
@@ -82,20 +88,24 @@ html, body{
 }
 
 #photoBox #buttons{
+cursor:pointer;
 position: absolute;
 width: 100%;
 top: 40%;
 left: 50%;
 transform: translate(-50%, -50%);
 font-size: 4vw;
+z-index: 1;
 }
 
 #photoBox #buttons #left{
+  text-shadow: 3px 3px rgba(0, 0, 0, 0.1);
   padding-left: 20px;
   color: #383732;
   float: left;
 }
 #photoBox #buttons #right{
+  text-shadow: 3px 3px rgba(0, 0, 0, 0.1);
   padding-right: 20px;
   color: #383732;
   float: right;

@@ -1,5 +1,7 @@
 $(document).ready(function(){
 	// Color chanege when hover category button
+	var current = $("#category1 img").not(".myDisable").attr("ref");
+
 	$("#categoryBar a").hover(function(){
 		var colorTarget = $("#categoryBar")
 		var ref = $(this).attr("ref");
@@ -17,9 +19,8 @@ $(document).ready(function(){
 
 
 	$("#photoBox a").click(function(){
-		// String local variables
 		var numOfPic = 19;
-		var current = $("#category1 img").not(".myDisable").attr("ref");
+		// String reference e.g. "12"
 		var next;
 
 		if($(this).attr("id") == "right"){
@@ -31,6 +32,9 @@ $(document).ready(function(){
 		// disable current, enable next
 		$("#category1 img[ref = '"+current+"']").addClass("myDisable");
 		$("#category1 img[ref = '"+next+"']").removeClass("myDisable");
+
+		// next slide becomes current slide next time clicked
+		current = next;
 	});
 
 
